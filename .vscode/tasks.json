@@ -1,0 +1,29 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "C:\\mingw64\\bin\\gcc.exe",
+            "args": [
+                "-g",
+                "${workspaceFolder}\\main.c",
+                "-o", "${workspaceFolder}\\main.exe",
+                "-I", "${workspaceFolder}\\include",
+                "-L", "${workspaceFolder}\\lib",
+                "-lmbedtls",
+                "-lmbedx509",
+                "-lmbedcrypto",
+                "-lws2_32",
+                "-lpthread",
+                "-lbcrypt",
+                "-lSDL2",
+                "-lSDL2_ttf"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}

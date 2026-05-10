@@ -1,0 +1,8 @@
+[
+{
+  "directory": "D:/etec/hive/build",
+  "command": "C:\\mingw64\\bin\\gcc.exe  @CMakeFiles/main.dir/includes_C.rsp -g -std=gnu99 -o CMakeFiles\\main.dir\\main.c.obj -c D:\\etec\\hive\\main.c",
+  "file": "D:/etec/hive/main.c",
+  "output": "CMakeFiles/main.dir/main.c.obj"
+}
+]
