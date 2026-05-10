@@ -31,5 +31,6 @@ target_link_libraries(
     mbedtls
     mbedx509
     pthread
-
+    SDL2
+    SDL2_ttf
 )

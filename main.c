@@ -71,7 +71,7 @@ static void dump_pubkey(const char *title, mbedtls_ecdsa_context *key)
 
 
 
-#if 0
+#if 1
 #define WINDOW_WIDTH  800
 #define WINDOW_HEIGHT 600
  
@@ -173,7 +173,7 @@ SDL_Init(SDL_INIT_VIDEO);
     SDL_Renderer* renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
   
     // 加载中文字体 换成你实际的字体路径
-    TTF_Font* font = TTF_OpenFont("D:\\etec\\mbedtls_test\\Simhei.ttf", 36);
+    TTF_Font* font = TTF_OpenFont("/home/mike/hive/Simhei.ttf", 36);
     if (!font) {
         printf("字体加载失败\n");
         return -1;
@@ -262,14 +262,14 @@ mbedtls_ctr_drbg_seed(&ctr_drbg, mbedtls_entropy_func, &entropy,
 
 
 mbedtls_pk_init(&ec_prik_ctx);
-ret = mbedtls_pk_parse_keyfile(&ec_prik_ctx, "/home/mike/ws_mbedtls/client.key", NULL, NULL, NULL);
+ret = mbedtls_pk_parse_keyfile(&ec_prik_ctx, "/home/mike/hive/client.key", NULL, NULL, NULL);
 
    if (ret != 0) {
         printf("mbedtls_pk_parse_keyfile failed\n");
     }
 
 int fd;
-fd = open("/home/mike/ws_mbedtls/hash.bin",O_WRONLY);
+fd = open("/home/mike/hive/hash.bin",O_WRONLY);
 if(fd < 0)
 {
     printf("open hash.bin failed\n");

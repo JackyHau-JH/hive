@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/mike/hive/build",
+  "command": "/usr/bin/gcc -I/home/mike/hive/include -g -std=gnu99 -o CMakeFiles/main.dir/main.c.o -c /home/mike/hive/main.c",
+  "file": "/home/mike/hive/main.c",
+  "output": "CMakeFiles/main.dir/main.c.o"
+}
+]
