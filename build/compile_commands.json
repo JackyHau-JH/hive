@@ -4,5 +4,17 @@
   "command": "/usr/bin/gcc -I/home/mike/hive/include -g -std=gnu99 -o CMakeFiles/main.dir/main.c.o -c /home/mike/hive/main.c",
   "file": "/home/mike/hive/main.c",
   "output": "CMakeFiles/main.dir/main.c.o"
+},
+{
+  "directory": "/home/mike/hive/build",
+  "command": "/usr/bin/gcc -I/home/mike/hive/include -g -std=gnu99 -o CMakeFiles/main.dir/app_sdl2.c.o -c /home/mike/hive/app_sdl2.c",
+  "file": "/home/mike/hive/app_sdl2.c",
+  "output": "CMakeFiles/main.dir/app_sdl2.c.o"
+},
+{
+  "directory": "/home/mike/hive/build",
+  "command": "/usr/bin/gcc -I/home/mike/hive/include -g -std=gnu99 -o CMakeFiles/main.dir/app_mbedtls.c.o -c /home/mike/hive/app_mbedtls.c",
+  "file": "/home/mike/hive/app_mbedtls.c",
+  "output": "CMakeFiles/main.dir/app_mbedtls.c.o"
 }
 ]

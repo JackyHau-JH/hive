@@ -56,6 +56,20 @@ build CMakeFiles/main.dir/main.c.o: C_COMPILER__main_unscanned_Debug /home/mike/
   OBJECT_DIR = CMakeFiles/main.dir
   OBJECT_FILE_DIR = CMakeFiles/main.dir
 
+build CMakeFiles/main.dir/app_sdl2.c.o: C_COMPILER__main_unscanned_Debug /home/mike/hive/app_sdl2.c || cmake_object_order_depends_target_main
+  DEP_FILE = CMakeFiles/main.dir/app_sdl2.c.o.d
+  FLAGS = -g -std=gnu99
+  INCLUDES = -I/home/mike/hive/include
+  OBJECT_DIR = CMakeFiles/main.dir
+  OBJECT_FILE_DIR = CMakeFiles/main.dir
+
+build CMakeFiles/main.dir/app_mbedtls.c.o: C_COMPILER__main_unscanned_Debug /home/mike/hive/app_mbedtls.c || cmake_object_order_depends_target_main
+  DEP_FILE = CMakeFiles/main.dir/app_mbedtls.c.o.d
+  FLAGS = -g -std=gnu99
+  INCLUDES = -I/home/mike/hive/include
+  OBJECT_DIR = CMakeFiles/main.dir
+  OBJECT_FILE_DIR = CMakeFiles/main.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target main
@@ -64,7 +78,7 @@ build CMakeFiles/main.dir/main.c.o: C_COMPILER__main_unscanned_Debug /home/mike/
 #############################################
 # Link the executable main
 
-build main: C_EXECUTABLE_LINKER__main_Debug CMakeFiles/main.dir/main.c.o
+build main: C_EXECUTABLE_LINKER__main_Debug CMakeFiles/main.dir/main.c.o CMakeFiles/main.dir/app_sdl2.c.o CMakeFiles/main.dir/app_mbedtls.c.o
   FLAGS = -g
   LINK_LIBRARIES = -Wl,-rpath,/home/mike/hive/lib  -lmbedcrypto  -lmbedtls  -lmbedx509  -lpthread  -lSDL2  -lSDL2_ttf
   LINK_PATH = -L/home/mike/hive/lib

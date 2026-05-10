@@ -22,7 +22,11 @@ include_directories(${CMAKE_SOURCE_DIR}/include)
 link_directories(${CMAKE_SOURCE_DIR}/lib)
 
 # 生成可执行文件
-add_executable(main main.c)
+add_executable(main 
+main.c 
+app_sdl2.c
+app_mbedtls.c
+)
 
 
 target_link_libraries(
